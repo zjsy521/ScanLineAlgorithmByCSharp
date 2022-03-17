@@ -113,31 +113,11 @@ namespace ScanLineDemo
     /// <summary>
     /// 扫描线，平行于x轴的线做为扫描线
     /// </summary>
-    public struct ScanLine:IComparable<ScanLine>
+    public struct ScanLine
     {
         public long l, r; //l和r为线段的左、右端点的X值，
         public long h;    //h为线段的Y值
         public int mark;  //用于保存权值，1代表是下边，-1代表是上边
-
-        public int CompareTo(ScanLine other)
-        {
-            if (h > other.h)
-                return 1;
-            else if (h == other.h)
-                return 0;
-            else
-                return -1;
-        }
-
-        //public static bool operator <(ScanLine a, ScanLine b)
-        //{
-        //    return a.h < b.h;
-        //}
-
-        //public static bool operator >(ScanLine a, ScanLine b)
-        //{
-        //    return a.h > b.h;
-        //}
     }
 
     /// <summary>
