@@ -1,5 +1,5 @@
 # ScanLineAlgorithmByCSharp
-基于C#的扫描线计算N个平行于X轴的矩形面积
+基于C#实现扫描线计算N个平行于X轴的矩形面积
 
 
 P5490【模板】扫描线
